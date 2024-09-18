@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", 
@@ -6,11 +5,13 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        '48': '12rem', // Define padding value if it's missing
+        '48': '12rem', // Custom padding value
+      },
+      height: {
+        '128': '32rem', 
+        '250': '62.5rem',
       }
     },
   },
   plugins: [],
 }
-
-

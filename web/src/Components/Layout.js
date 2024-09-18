@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div className="flex h-screen">
     
-      <div className="w-12  md:w-32 lg:w-18 bg-gray-200 p-2">
+      <div className="w-12  md:w-32 lg:w-18 lg:h-250 bg-gray-200 p-2">
         <SubContent/>
       </div>
 
