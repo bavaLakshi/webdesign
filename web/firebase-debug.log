@@ -1,0 +1,201 @@
+[debug] [2024-09-17T17:51:51.435Z] ----------------------------------------------------------------------
+[debug] [2024-09-17T17:51:51.438Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-17T17:51:51.438Z] CLI Version:   13.17.0
+[debug] [2024-09-17T17:51:51.439Z] Platform:      win32
+[debug] [2024-09-17T17:51:51.439Z] Node Version:  v20.11.0
+[debug] [2024-09-17T17:51:51.439Z] Time:          Tue Sep 17 2024 23:21:51 GMT+0530 (India Standard Time)
+[debug] [2024-09-17T17:51:51.439Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-17T17:51:51.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-17T17:51:51.514Z] > authorizing via signed-in user (bavabala18@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\React\ReactAss\web
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-17T17:53:03.342Z] Using project from CLI flag: webhost-de9a3
+[debug] [2024-09-17T17:53:03.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 [none]
+[debug] [2024-09-17T17:53:04.211Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 200
+[debug] [2024-09-17T17:53:04.212Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 {"projectId":"webhost-de9a3","projectNumber":"86156154671","displayName":"webhost","name":"projects/webhost-de9a3","resources":{"hostingSite":"webhost-de9a3","realtimeDatabaseInstance":"webhost-de9a3-default-rtdb"},"state":"ACTIVE","etag":"1_6c3d9df8-2a48-434e-94f5-9be7ea928703"}
+[info] i  Using project webhost-de9a3 (webhost) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-09-17T17:53:04.243Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-09-17T17:53:04.243Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/webhost-de9a3
+[debug] [2024-09-17T17:53:06.216Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com 200
+[debug] [2024-09-17T17:53:06.216Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-09-17T17:53:06.217Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb [none]
+[debug] [2024-09-17T17:53:07.809Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb 200
+[debug] [2024-09-17T17:53:07.809Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb {"name":"projects/86156154671/locations/asia-southeast1/instances/webhost-de9a3-default-rtdb","project":"projects/86156154671","databaseUrl":"https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-09-17T17:53:07.812Z] >>> [apiv2][query] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-09-17T17:53:07.994Z] <<< [apiv2][status] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-09-17T17:53:07.994Z] <<< [apiv2][body] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2024-09-17T17:53:08.147Z] Error: EISDIR: illegal operation on a directory, open 'C:\React\ReactAss\web\build'
+    at Object.writeFileSync (node:fs:2352:20)
+    at Object.createFileSync (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at writeDBRules (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:34:12)
+    at doSetup (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:124:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-17T17:54:12.648Z] ----------------------------------------------------------------------
+[debug] [2024-09-17T17:54:12.651Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-17T17:54:12.652Z] CLI Version:   13.17.0
+[debug] [2024-09-17T17:54:12.652Z] Platform:      win32
+[debug] [2024-09-17T17:54:12.652Z] Node Version:  v20.11.0
+[debug] [2024-09-17T17:54:12.652Z] Time:          Tue Sep 17 2024 23:24:12 GMT+0530 (India Standard Time)
+[debug] [2024-09-17T17:54:12.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-17T17:54:12.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-17T17:54:12.741Z] > authorizing via signed-in user (bavabala18@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\React\ReactAss\web
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-17T17:54:49.454Z] Using project from CLI flag: webhost-de9a3
+[debug] [2024-09-17T17:54:49.457Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 [none]
+[debug] [2024-09-17T17:54:50.334Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 200
+[debug] [2024-09-17T17:54:50.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 {"projectId":"webhost-de9a3","projectNumber":"86156154671","displayName":"webhost","name":"projects/webhost-de9a3","resources":{"hostingSite":"webhost-de9a3","realtimeDatabaseInstance":"webhost-de9a3-default-rtdb"},"state":"ACTIVE","etag":"1_6c3d9df8-2a48-434e-94f5-9be7ea928703"}
+[info] i  Using project webhost-de9a3 (webhost) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-09-17T17:54:50.364Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-09-17T17:54:50.364Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/webhost-de9a3
+[debug] [2024-09-17T17:54:52.391Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com 200
+[debug] [2024-09-17T17:54:52.391Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-09-17T17:54:52.393Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb [none]
+[debug] [2024-09-17T17:54:54.505Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb 200
+[debug] [2024-09-17T17:54:54.505Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb {"name":"projects/86156154671/locations/asia-southeast1/instances/webhost-de9a3-default-rtdb","project":"projects/86156154671","databaseUrl":"https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-09-17T17:54:54.509Z] >>> [apiv2][query] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-09-17T17:54:54.765Z] <<< [apiv2][status] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-09-17T17:54:54.765Z] <<< [apiv2][body] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2024-09-17T17:54:54.908Z] Error: EISDIR: illegal operation on a directory, open 'C:\React\ReactAss\web\build'
+    at Object.writeFileSync (node:fs:2352:20)
+    at Object.createFileSync (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at writeDBRules (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:34:12)
+    at doSetup (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:124:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-17T17:56:49.813Z] ----------------------------------------------------------------------
+[debug] [2024-09-17T17:56:49.816Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-17T17:56:49.816Z] CLI Version:   13.17.0
+[debug] [2024-09-17T17:56:49.817Z] Platform:      win32
+[debug] [2024-09-17T17:56:49.817Z] Node Version:  v20.11.0
+[debug] [2024-09-17T17:56:49.817Z] Time:          Tue Sep 17 2024 23:26:49 GMT+0530 (India Standard Time)
+[debug] [2024-09-17T17:56:49.817Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-17T17:56:49.906Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-17T17:56:49.907Z] > authorizing via signed-in user (bavabala18@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\React\ReactAss\web
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-17T17:57:05.403Z] Using project from CLI flag: webhost-de9a3
+[debug] [2024-09-17T17:57:05.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 [none]
+[debug] [2024-09-17T17:57:06.309Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 200
+[debug] [2024-09-17T17:57:06.310Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webhost-de9a3 {"projectId":"webhost-de9a3","projectNumber":"86156154671","displayName":"webhost","name":"projects/webhost-de9a3","resources":{"hostingSite":"webhost-de9a3","realtimeDatabaseInstance":"webhost-de9a3-default-rtdb"},"state":"ACTIVE","etag":"1_6c3d9df8-2a48-434e-94f5-9be7ea928703"}
+[info] i  Using project webhost-de9a3 (webhost) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-09-17T17:57:06.322Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-09-17T17:57:06.322Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/webhost-de9a3
+[debug] [2024-09-17T17:57:07.985Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com 200
+[debug] [2024-09-17T17:57:07.985Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webhost-de9a3/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-09-17T17:57:07.987Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb [none]
+[debug] [2024-09-17T17:57:09.905Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb 200
+[debug] [2024-09-17T17:57:09.905Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/webhost-de9a3/locations/-/instances/webhost-de9a3-default-rtdb {"name":"projects/86156154671/locations/asia-southeast1/instances/webhost-de9a3-default-rtdb","project":"projects/86156154671","databaseUrl":"https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-09-17T17:57:09.908Z] >>> [apiv2][query] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-09-17T17:57:10.068Z] <<< [apiv2][status] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-09-17T17:57:10.069Z] <<< [apiv2][body] GET https://webhost-de9a3-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2024-09-17T17:57:10.396Z] Error: EISDIR: illegal operation on a directory, open 'C:\React\ReactAss\web\build'
+    at Object.writeFileSync (node:fs:2352:20)
+    at Object.createFileSync (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at writeDBRules (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:34:12)
+    at doSetup (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:124:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\dhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
